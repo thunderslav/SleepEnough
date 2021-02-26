@@ -1,0 +1,38 @@
+/* Der Hintergrund wird hier eingestellt, das Bild dafür ist in unser "assets" Odner hintelegt*/
+
+ion-content{
+  --background: none;
+  background-image: url('../../assets/background/start.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Hier stellen wir die Schriftart für unseren Text ein */
+
+ion-text{
+  font-family: Ribeye !important;
+  font-size:large;
+  --color: white;
+}
+
+/* Positionieren alles was in unseren  Container */
+#container {
+  text-align: center;
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*Die Eigenschaftnen (Größe, Schrifart, Hintergrund) für unsere Knöpfe */
+ion-button{ 
+  font-family: Ribeye !important;
+  font-size:large;
+  color: white;
+  --background: rgba(196,196,196,0.2);
+  --height: 40%;
+  width: 60%;
+  --border-radius: 15px;
+}
