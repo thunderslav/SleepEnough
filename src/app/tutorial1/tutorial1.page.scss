@@ -1,0 +1,54 @@
+/* Der Hintergrund wird hier eingestellt, das Bild dafür ist in unser "assets" Odner hintelegt*/
+
+ion-content{
+    --background: none;
+    background-image: url('../../assets/background/registrieren.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+
+  }
+
+  /* Hier stellen wir die Schriftart für unseren Text ein */
+
+  ion-text{
+    font-family: Ribeye !important;
+    font-size:large;
+    --color: white;
+  }
+  #container {
+    text-align: center;
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  /*Die Eigenschaftnen (Größe, Schrifart, Hintergrund) für unsere Knöpfe */
+  ion-button{ 
+    font-family: Ribeye !important;
+    font-size:large;
+    color: white;
+    --background: rgba(196,196,196,0);
+  }
+  
+/* Problem: wenn wir PX angeben wird die Größe des Bildes sich nicht an den bIlshirm anpassen; dh: besser %F  benutzen; hier 600% war das icon ursprünglich sehr klein ist/war */
+#Icon1{
+  align-items: center;
+  justify-content: center;
+  font-size: 600%;
+}
+
+ion-grid{
+  --ion-grid-rows: 4;
+  --ion-grid-columns: 3;
+  --ion-grid-padding:5;
+
+}
+ion-row{
+  text-align:center;
+  padding-top: 5%;
+}
+
